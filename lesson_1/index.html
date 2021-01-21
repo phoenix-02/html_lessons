@@ -161,19 +161,56 @@
     то с помощью атрибута clear тега <br> можно сделать так, чтобы следующая строка начиналась ниже элемента.
 -->
 before br <br> after br
+<div id="hw">
+  <h1>П\З</h1>
+  <h2>Сверстать простую страничку о себе <br>(сильно усложнять не надо, это мы сделать еще успеем)</h2>
+  <div class="links">
+    <a href="http://htmlbook.ru/layout">
+      Шаблоны страниц
+    </a>
+    <a href="http://htmlbook.ru/html">
+      Информация по тегам
+    </a>
+    <a href="http://htmlbook.ru/css">
+      Информация по стилям
+    </a>
+  </div>
+
+  <ul>
+    <li>страница должна иметь приемлемый вид</li>
+    <li>использовать разные цвета (! только подходящие)</li>
+    <li>иметь приятный фон</li>
+    <li>красивый шрифт</li>
+  </ul>
+</div>
+<style>
+  #hw {
+    margin: 0 auto;
+    padding: 30px;
+    width: 50%;
+    background: burlywood;
+  }
+  #hw h1, h2{
+    text-align: center;
+
+  }
+  #hw ul {
+    text-align: left;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links a {
+  !important;
+    color: blue;
+    font-size: 20px;
+
+  }
+</style>
 
 </body>
 </html>
-<!--
-  П\З
-    Сверстать проустую страничку о себе (сильно усложнять не надо, это мы сделать еще успеем)
-       страница должна иметь приемлемый вид,
-       использовать разные цвета (! только подходящие)
-       иметь приятный фон и
-       красивый шрифт
-     источники:
-     http://htmlbook.ru/layout - шаблоны страницы
-     http://htmlbook.ru/html - информация по тегам
-     http://htmlbook.ru/css  - информация по стилям
 
--->
