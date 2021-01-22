@@ -1,33 +1,49 @@
 body{
+    /* ставим фоновую картинку*/
     background-image: url("img/wall.jpg");
+    /* повторение фона */
     background-repeat: repeat;
+    /* закрепление фона в одной позиции*/
     background-attachment: fixed;
 }
 #root {
     color: white;
     background-image: url("img/board.jpg") ;
     background-attachment: initial;
+    /* Это свойство создаёт сам flex контейнер */
+    /*Изначально все flex-элементы будут пытаться уместиться в одну строку.*/
     display: flex;
+    /* перенос не будет осуществляться без этой строки */
     flex-wrap: wrap;
     width: 90%;
-    margin: 100px auto 100px auto;
+    /*расположение блока по середине */
+    margin: 100px auto;
+    /* закругление углов */
     border-radius: 20px;
 }
 
 .todo_list img{
+    /* зеркальное отражение картинки*/
     transform: scale(-1, 1);
+    /* зеркальное отражение картинки*/
+    /* Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице*/
+    /* словно абсолютно позиционированного элемента и нет.*/
     position: absolute;
+    /*перемещение от крайней правой точки в правую сторону на 55px  */
     right: -55px;
+    /* тоже самое, но вверх */
     top: -40px;
 }
 
 .todo_list {
     border: white 20px;
     position: relative;
-    margin: 40px 100px;
+    margin: 40px 20px;
+    /* разворот элемента на -10 градусов */
     transform: rotate(-10deg);
     width: 250px;
     font-family: cursive;
+    /* градиент для складки листка */
     background: linear-gradient(-130deg, transparent 1.5em, darkorange 0);
     border-radius: 10px;
 }
@@ -36,6 +52,7 @@ body{
     content: '';
     position: absolute;
     top: -4px; right: -4px;
+    /* градиент для складки листка */
     background: linear-gradient(230deg, transparent 55%, rgba(0,0,0,.2) 0) ;
     width: 2.2em;
     height: 2.53em;
@@ -45,6 +62,7 @@ body{
 
 .todo_list ul {
     padding: 20px;
+    /* по умолчанию в ul есть точки означающие пункты, данный стиль их убирает*/
     list-style: none;
 }
 

@@ -9,26 +9,43 @@
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <!--  через link -->
   <link href="index.css" rel="stylesheet">
   <script src="index.js"></script>
   <title>Document</title>
 </head>
 <body>
-<h1>TODO LIST</h1>
+<!-- с помощью тега style -->
+<style>
+  .some_class {
+    font-size: 12px;
+  }
+</style>
+
+<!-- с помощью inline стилей -->
+<h1 style="color: darkslategrey">TODO LIST</h1>
+
 <div id="root">
-  <a href="../lesson_1/">
-    bootstrap
-  </a>
 
   <div class="todo_list">
-    <img src="img/button.png" width="120px" alt="">
+    <!-- изображения передаются с помощью тега img, путь передается в атрибут src -->
+    <img alt="" src="img/button.png" width="120px">
     <h3>
+      <!-- также существует тег time использующийся для семантической верстки -->
       <time>2057-10-04</time>
     </h3>
+    <!--  Тег <ul> устанавливает маркированный список. -->
     <ul>
-      <li><label>
-        <input type="checkbox">
-      </label>проснуться
+      <!--       Каждый элемент списка должен начинаться с тега <li>-->
+      <li>
+        <!-- Тег <label> устанавливает связь между определенной меткой, -->
+        <!-- в качестве которой обычно выступает текст, и элементом формы (<input>, <select>, <textarea>). &ndash;&gt;-->
+        <label>
+          <!-- Тег <input> является одним из разносторонних элементов формы и позволяет создавать разные элементы интерфейса-->
+          <!-- и обеспечить взаимодействие с пользователем. Главным образом <input> предназначен для создания текстовых полей,-->
+          <!-- различных кнопок, переключателей и флажков.-->
+          <input type="checkbox">
+        </label>проснуться
       </li>
       <li><label>
         <input type="checkbox">
@@ -66,10 +83,10 @@
 
   <ul>
     <li>страница должна иметь приемлемый вид</li>
-      <li>шапка</li>
-      <li>левая\правая секция</li>
-      <li>подвал</li>
-      <li>фон</li>
+    <li>шапка</li>
+    <li>левая\правая секция</li>
+    <li>подвал</li>
+    <li>фон</li>
   </ul>
 </div>
 <style>
@@ -79,10 +96,12 @@
     width: 50%;
     background: burlywood;
   }
-  #hw h1, h2{
+
+  #hw h1, h2 {
     text-align: center;
 
   }
+
   #hw ul {
     text-align: left;
   }
