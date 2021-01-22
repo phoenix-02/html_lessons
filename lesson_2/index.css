@@ -1,0 +1,54 @@
+body{
+    background-image: url("img/wall.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+#root {
+    color: white;
+    background-image: url("img/board.jpg") ;
+    background-attachment: initial;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 100px auto 100px auto;
+    border-radius: 20px;
+}
+
+.todo_list img{
+    transform: scale(-1, 1);
+    position: absolute;
+    right: -55px;
+    top: -40px;
+}
+
+.todo_list {
+    border: white 20px;
+    position: relative;
+    margin: 40px 100px;
+    transform: rotate(-10deg);
+    width: 250px;
+    font-family: cursive;
+    background: linear-gradient(-130deg, transparent 1.5em, darkorange 0);
+    border-radius: 10px;
+}
+
+.todo_list::before {
+    content: '';
+    position: absolute;
+    top: -4px; right: -4px;
+    background: linear-gradient(230deg, transparent 55%, rgba(0,0,0,.2) 0) ;
+    width: 2.2em;
+    height: 2.53em;
+    border-radius: 10px;
+
+}
+
+.todo_list ul {
+    padding: 20px;
+    list-style: none;
+}
+
+.todo_list h3 {
+    position: absolute;
+    margin: -30px 0 0 30px;
+}
