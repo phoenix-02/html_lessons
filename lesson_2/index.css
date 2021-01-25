@@ -9,7 +9,7 @@ body{
 #root {
     color: white;
     background-image: url("img/board.jpg") ;
-    background-attachment: initial;
+    background-attachment: fixed;
     /* Это свойство создаёт сам flex контейнер */
     /*Изначально все flex-элементы будут пытаться уместиться в одну строку.*/
     display: flex;
@@ -30,13 +30,14 @@ body{
     /* словно абсолютно позиционированного элемента и нет.*/
     position: absolute;
     /*перемещение от крайней правой точки в правую сторону на 55px  */
+    /*right: 0;*/
     right: -55px;
     /* тоже самое, но вверх */
     top: -40px;
 }
 
 .todo_list {
-    border: white 20px;
+    /*border: white 20px;*/
     position: relative;
     margin: 40px 20px;
     /* разворот элемента на -10 градусов */
@@ -63,7 +64,7 @@ body{
 .todo_list ul {
     padding: 20px;
     /* по умолчанию в ul есть точки означающие пункты, данный стиль их убирает*/
-    list-style: none;
+    list-style: decimal;
 }
 
 .todo_list h3 {
