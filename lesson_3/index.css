@@ -1,17 +1,16 @@
 .container div {
     height: 200px;
-    width: 200px;
+    width: 900px;
     margin: 10px;
     background-color: chocolate;
 }
 .container{
     background-size: cover;
-    width: 200px;
+    width: 900px;
     height: 600px;
-    align-items: center;
     background-color: grey;
     display: flex;
-    animation: rotation_divs 5s infinite;
+    /*animation: rotation_divs 5s infinite;*/
 }
 /*.container:before{*/
 /*    !*flex-direction: column;*!*/
@@ -20,14 +19,3 @@
 
 /*.container:after{*/
 /*}*/
-
-
-
-@keyframes rotation_divs {
-    0%{
-        right: 1000px;
-    }
-    100%{
-        right: 0;
-    }
-}
